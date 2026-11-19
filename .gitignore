@@ -1,0 +1,58 @@
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# --- Secrets and local configuration ---------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Runtime data -----------------------------------------------------------
+backend/instance/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.log
+
+# --- Frontend ---------------------------------------------------------------
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vite/
+
+# The production build is intentionally committed so the backend can serve the
+# app without Node.js. Do not ignore backend/app/static.
+!backend/app/static/
+
+# --- OS / editor ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Backups / local dumps --------------------------------------------------
+*.bak
+*.sql.gz
+backups/
